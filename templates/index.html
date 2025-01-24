@@ -86,7 +86,8 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid justify-content-center">
-            <a class="navbar-brand" onclick="window.location.href='/'" style="cursor: pointer;">HeathMate AI</a>
+            <a class="navbar-brand" onclick="window.location.href='/'" style="cursor: pointer;">
+            </a>
         </div>
     </nav>
 
@@ -300,6 +301,7 @@
         const symptomsInput = document.getElementById('symptoms');
 
         startSpeechRecognitionButton.addEventListener('click', startSpeechRecognition);
+        startSpeechRecognitionButton.addEventListener('touchstart', startSpeechRecognition);
 
         function startSpeechRecognition() {
             // Check if SpeechRecognition or webkitSpeechRecognition is available
