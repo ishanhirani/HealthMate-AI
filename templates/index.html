@@ -339,10 +339,10 @@
             };
 
             // // Handle errors during speech recognition
-            // recognition.onerror = function (event) {
-            //     console.error('Speech recognition error:', event.error);
-            //     alert(`Speech recognition error: ${event.error}`);
-            // };
+            recognition.onerror = function (event) {
+                console.error('Speech recognition error:', event.error);
+                alert(`Speech recognition error: ${event.error}`);
+            };
 
             // Check for microphone access before starting recognition
             navigator.mediaDevices
